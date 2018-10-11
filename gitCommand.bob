@@ -24,7 +24,7 @@
 2. 	查看本地工作目录状态
 	git status
 	
-3.	添加新文件
+3.	添加新文件到工作目录，或者添加新修改到工作目录
 	git add
 	
 4.	创建忽略提交文件
@@ -39,7 +39,17 @@
 	
 6.	提交更新
 	git commit
+	git commit -a		//不用使用git add，直接commit所有修改文件。
+	git commit -a -m 	//-m后添加
 
+7.	删除和移动文件
+
+8.	git log命令
+
+9.	撤销操作
+
+四、与远程仓库互动
+1.	git remote
 
 
 
