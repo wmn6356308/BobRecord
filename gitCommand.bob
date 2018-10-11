@@ -1,0 +1,48 @@
+一、配置
+1.	git配置用户名和邮箱。以后每次提交，都使用配置的用户名和邮箱。
+	git config --global user.name "Bob"
+	git config --global user.email mn.bob@qq.com
+2.	配置文本工具。
+	git config --global core.editor emacs
+3.	配置差异分析工具。
+	git config --global merge.tool vimdiff
+4.	查看配置。
+	git config --list
+	git config user.name
+
+注：--global表示全局配置。
+
+二、查看帮助
+1.	git help <verb> / git <verb> --help / man git-<verb>
+
+注：<verb> 表示需要查看的帮助。比如查看配置的帮助：git help config
+
+三、基础命令
+1.	克隆
+	git clone <url>	/ git clone <url> newName
+
+2. 	查看本地工作目录状态
+	git status
+	
+3.	添加新文件
+	git add
+	
+4.	创建忽略提交文件
+	cat .gitignore
+	//所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。
+	//可以使用标准的 glob 模式匹配。
+	//匹配模式最后跟反斜杠（/）说明要忽略的是目录。
+	//要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。
+
+5.	查看不同
+	git diff / git diff --cached / git diff --staged
+	
+6.	提交更新
+	git commit
+
+
+
+
+
+
+
