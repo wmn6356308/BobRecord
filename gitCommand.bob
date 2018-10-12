@@ -43,16 +43,39 @@
 	git commit -a -m 	//-m后添加
 
 7.	删除和移动文件
+	git rm <文件名> / git rm -f <文件名> / git rm -- cached <文件名>
+	git mv <老文件名> <新文件名>
 
 8.	git log命令
+	git log -p -<n>				//补丁形式打印n次提交的不同
+	git log --stat				//显示统计信息statistics
+	git log -p --word-diff
 
 9.	撤销操作
+	git commit --amend
 
-四、与远程仓库互动
-1.	git remote
+四、与远程仓库互动（只列举了小部分命令及相应参数）
+1.	git remote / git remote -v
 
+2. 	git fetch <remote-name>		//从remote-name拉去本地没有的数据，getch只是将数据拉到本地，并没有合并到当前分支。
+	git fetch origin
 
+3. 	git pull		//拉去远端数据到本地，并自动合并。
 
+4. 	git push <remote-name> <branch-name>	//将本地的数据，推送到服务器
+
+5.	git remote rename <old-name> <new-name>	//改名
+
+6.	git remote rm <remote-name>				//移除
+
+7.	git tag / git tag -l / git tag -a <tag-name> -m <tag-discribes> / git show <tag-name>
+	//比如：git tag -a v1.4 -m 'my version 1.4'	/ git show v1.4
+
+五、分支命令
+1.	git branch <branch-name>
+2.	git checkout <branch-name>
+3.	git checkout -b <branch-name> 	// = git branch <branch-name>  git checkout <branch-name>
+4.	git merge <branch-name>			// 将branch-name merge 到当前分支
 
 
 
